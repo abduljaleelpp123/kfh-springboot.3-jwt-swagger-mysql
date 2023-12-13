@@ -1,0 +1,326 @@
+{
+	"info": {
+		"_postman_id": "1fe1e295-738c-4c37-a637-e283f9caa083",
+		"name": "kfh-abdul",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "22788423"
+	},
+	"item": [
+		{
+			"name": "course-add",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "Bearer eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJhYmR1bGphbGVlbDEyM0BnbWFpbC5jb20iLCJpYXQiOjE3MDI0OTY4MzIsImV4cCI6MTcwMjU4MzIzMn0.MsIVqWpw2TQb1Ot_M2FB9O7Sp6v8OKHsQTKAkX2ZKmk",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"courseName\": \"BSc Mat\",\r\n    \"courseCode\": \"BSc Mathematics\",\r\n    \"courseStatus\": 1,\r\n    \"courseId\": 0\r\n\r\n    \r\n    \r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8080/course/add",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"course",
+						"add"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "course-update",
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"courseName\": \"ja4lyyeel\",\r\n    \"courseCode\": \"ww2s\",\r\n    \"courseStatus\": 122,\r\n    \"courseId\": 5\r\n\r\n    \r\n    \r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8080/course/update",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"course",
+						"update"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "course-Delete-byCourseID",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8080/course/delete/2333",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"course",
+						"delete",
+						"2333"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "course-getCoursbyID",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8080/course/get/1",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"course",
+						"get",
+						"1"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "course-getAllCourses",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8080/course/get",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"course",
+						"get"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "student-add",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"stEgName\": \"Abdul jaleel\",\r\n    \"stArName\": \"عبد الجليل\",\r\n    \"stEmail\": \"abduljaleel@yahoo.com\",\r\n    \"st_address\": \"Palamadathil house\",\r\n    \"stStatus\": 1\r\n\r\n    \r\n    \r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8080/student/add",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"student",
+						"add"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "course-reg-to-student",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"courseName\": \"BA-English\",\r\n    \"courseCode\": \"BA-E\",\r\n    \"courseStatus\": 1,\r\n    \"courseId\": 0\r\n\r\n    \r\n    \r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8080/course/add",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"course",
+						"add"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "course-reg->remove-student-from-course-allocation",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"courseName\": \"BA-English\",\r\n    \"courseCode\": \"BA-E\",\r\n    \"courseStatus\": 1,\r\n    \"courseId\": 0\r\n\r\n    \r\n    \r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8080/course/add",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"course",
+						"add"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "course-reg->update_student_cours_list",
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n  \"oldValue\":{  \"courseId\": 3,\r\n    \"studentId\": 4\r\n  },\r\n  \"newValue\":{  \"courseId\": 1,\r\n    \"studentId\": 4\r\n  }\r\n    \r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8080/student-course-change",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"student-course-change"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "getStudentlistByCourseID",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8080/course/get",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"course",
+						"get"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "AdminAccountSignup",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"name\": \"AbdulJaleel\",\r\n    \"email\": \"abduljaleel123@gmail.com\",\r\n    \"gender\":\"male\",\r\n    \"status\":\"active\",\r\n    \"role\": [\r\n        \"admin\"\r\n        ],\r\n    \"password\": \"1234567890\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8080/auth/signup",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"auth",
+						"signup"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "login-forjwt",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8080/auth/signin",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"auth",
+						"signin"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
